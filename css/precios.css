@@ -9,12 +9,12 @@
 }
 .barra ul {
     list-style: none;
+    float: right;
 }
 .barra ul li {
     display: inline-block;
     border-radius: 60px;
     line-height: 80px;
-
 }
 .barra ul li a {
     text-decoration: none;
