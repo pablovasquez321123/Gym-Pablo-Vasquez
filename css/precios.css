@@ -1,0 +1,311 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.barra {
+    display: flex;
+    justify-content: end;
+}
+.barra ul {
+    list-style: none;
+}
+.barra ul li {
+    display: inline-block;
+    border-radius: 60px;
+    line-height: 80px;
+
+}
+.barra ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    margin: 10px;
+    padding: 5px;
+    font-family: 'DM Sans', sans-serif;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.barra ul li a:hover{
+    transition: 0.5s;
+    background-color:  rgba(152, 151, 151, 0.263);
+}
+.header {
+    height: 80px;
+    width: 100%;
+    background-image: url(./../img/fondoDeBarra.jpeg);
+}
+.logo img {
+    float: left;
+    width: 200px;
+    height: 80px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+#bars{
+    display: none;
+}
+main {
+    background-image: url(./../img/fondoDePag.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+    padding-top: 80px;
+}
+h1{
+    color: aliceblue;
+    font-size: 40px;
+    font-family: 'ABeeZee', sans-serif;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+table{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    padding-bottom: 40px;
+}
+th{
+    font-size: 50px;
+    height: 50px;
+    width: 300px;
+}
+td{
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.38);
+}
+.musculacion{
+    background-image: url(./../img/musculacion.jpeg);
+}
+.crossfit{
+    background-image: url(./../img/crossfit.jpeg);
+}
+.funcional{
+    background-image: url(./../img/funcional.jpeg);
+}
+.boxeo{
+    background-image: url(./../img/boxeo.jpeg);
+}
+.zumba{
+    background-image: url(./../img/zumba.jpeg);
+}
+.item:hover{
+    transform: scale(1.05);
+    transition: all 0.8s;
+    box-shadow: 2px 2px 5px #333;
+}
+.item{
+    border-radius: 10px;
+}
+tr li{
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.38);
+    font-size: 18px;
+    list-style: none;
+    padding-left: 5px;
+    border-radius: 3px;
+}
+footer {
+    background-image: url(./../img/fondoDeBarra.jpeg);
+    width: 100%;
+    height: 120px;
+}
+footer .autor{
+    font-family: 'DM Sans', sans-serif;
+    padding-top: 15px;
+    padding-left: 20px;
+    color: aliceblue;
+}
+footer .derechos {
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    color: aliceblue;
+    
+}
+footer .redes {
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 8px;
+    letter-spacing: 15px;
+
+}
+@media (max-width: 1024px) {
+    .barra ul li a{
+        font-size: 22px;
+        margin: 5px;
+    }
+    .barra ul{
+        margin-top: 5px;
+    }
+    .barra ul li{
+        line-height: 70px;
+    }
+    main{
+        padding-top: 50px;
+    }
+    h1{
+        font-size: 28px;
+        background-color: rgba(0, 0, 0, 0.38);
+    }
+    table{
+        padding-bottom: 50px;
+    }
+    tr li{
+        border-radius: 7px;
+    }
+    footer{
+        height: 89px;
+    }
+    footer .autor{
+        padding-top: 8px;
+        padding-bottom: 2px;
+        font-size: 13px;
+    }
+    footer .derechos{
+        font-size: 15px;
+    }
+    footer .redes{
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+}
+@media (max-width: 800px) {
+    .barra ul li a{
+        font-size: 18px;
+        margin: 5px;
+    }
+    .barra ul li{
+        line-height: 60px;
+    }
+    .header{
+        height: 60px;
+    }
+    .logo img{
+        height: 60px;
+        width: 150px;
+    }
+    main{
+        padding-top: 50px;
+    }
+    h1{
+        font-size: 24px;
+        background-color: rgba(0, 0, 0, 0.38);
+    }
+    table{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    tr li{
+        border-radius: 3px;
+    }
+}
+@media (max-width: 650px) {
+    .checkbtn{
+        display: block;
+        line-height: 65px;
+    }
+    .barra ul{
+        position: fixed;
+        width: 100%;
+        height: 62.2vh;
+        background-color: rgba(0, 0, 0, 0.313);
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    .barra ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 30px;
+    }
+    .barra ul li a{
+        font-size: 20px;
+        margin: 0px;
+    }
+    .barra ul li a:hover{
+        transition: 0.5s;
+        background-color:  rgba(81, 79, 79, 0.724);
+    }
+    #bars:checked ~ ul{
+        left:0;
+    }
+    main{
+        padding-top: 40px;
+        height: auto;
+    }
+    h1{
+        font-size: 28px;
+        padding-bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.38);
+    }
+    td{
+        padding: 20px ;
+    }
+    th{
+        font-size: 40px;
+    }
+    tr li{
+        border-radius: 3px;
+    }
+    
+}
+@media (max-width: 425px) {
+    h1{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    th{
+        font-size: 26px;
+    }
+    td{
+        padding: 8px;
+    }
+    tr li{
+        font-size: 18px ;
+        border-radius: 3px;
+    }
+    footer{
+        height: 75px;
+    }
+    footer .autor{
+        padding-top: 2px;
+        font-size: 11px;
+        padding-bottom: 3px;
+    }
+    footer .derechos{
+        font-size: 10px;
+    }
+}
+@media (max-width: 375px) {
+    .barra ul{
+        height: 58.5vh;
+    }
+    th{
+        font-size: 20px;
+    }
+    tr li{
+        font-size: 15px;
+        border-radius: 3px;
+    }
+    td{
+        padding: 10px 0;
+    }
+    footer .redes{
+        font-size: 23px;
+        letter-spacing: 10px;
+        padding-top: 2px;
+    }
+}

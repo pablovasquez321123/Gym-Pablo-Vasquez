@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=DM+Sans:ital@1&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Magnumfitness</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><img src="./../img/logo.png" alt="Magnumfitness"></div>
+            <nav class="barra">
+                <input type="checkbox"id="bars">
+        <label for="bars" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+                <ul>
+                    <li><a href="./../index.html">Inicio</a></li>
+                    <li><a href="./../pages/sobrenosotros.html">Sobre nosotros</a></li>
+                    <li><a href="./../pages/clases.html">Clases</a></li>
+                    <li><a href="./../pages/precios.html">Precios</a></li>
+                    <li><a href="./../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <h1>Registrate!</h1>
+        <form method="post" class="form">
+        <fieldset>
+            <legend><strong>Introduce tus datos!</strong></legend> <br>
+            <form>
+                <h4>Sexo:</h4> <br>
+                <div class="sexo">Hombre<input type="radio" name="sexo" value="Hombre"></div>
+                <div class="sexo">Mujer<input type="radio" name="sexo" value="Mujer"></div>
+            </form> <br>
+            <form>
+                <label for="nombre">Nombre:</label> <br>
+                <input type="text" name="nombre" placeholder="nombre">
+            </form> <br>
+            <form>
+                <label for="apellido">Apellido:</label> <br>
+                <input type="text" name="apellido" placeholder="apellido" required="">
+            </form> <br>
+            <form>
+                <label for="Email">Email</label> <br>
+                <input type="email" name="email" placeholder="Email">
+            </form> <br>
+            <form>
+                <p><strong>Eres mayor de 18 años?</strong></p> <br>
+                <div class="edad">si<input type="radio" name="edad" value="si"></div>
+                <div class="edad">no<input type="radio" name="edad" value="no"></div>
+            </form> <br>
+            <form class="oferta">
+                <label for="Oferta mensual">Oferta mensual</label> <br>
+                    <select name="Oferta mensual">
+                    <option value="$3000">$3000</option>
+                    <option value="$3500">$3500</option>
+                    <option value="$4000">$4000</option>
+                </select>
+            </select>
+            </form> <br>
+            <form class="submit">
+                <input type="submit">
+            </form>
+        </fieldset>
+    </form>
+    <p class="parrafo">Por alguna consulta en especial no dudes en contactarnos desde nuestra cuenta oficial de instagram! <a href="https://www.instagram.com" target="_blank">Magnumfitness</a></p>
+</main>
+<footer>
+    <p><div class="autor"><strong>Autor</strong>: Pablo Vasquez</div></p>
+    <p><div class="derechos">Copyright&copy; 2022 - Página creada por pablo_vz - Todos los derechos reservados</div></p>
+    <div class="redes">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+</footer>
+</body>
+</html>

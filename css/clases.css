@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.barra {
+    display: flex;
+    justify-content: end;
+}
+.barra ul {
+    list-style: none;
+}
+.barra ul li {
+    display: inline-block;
+    padding-top: 25px;
+}
+.barra ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    margin: 10px;
+    padding: 5px;
+    font-family: 'DM Sans', sans-serif;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.barra ul li a:hover{
+    transition: 0.5s;
+    background-color:  rgba(152, 151, 151, 0.263);
+}
+.header {
+    height: 80px;
+    width: 100%;
+    background-image: url(./../img/fondoDeBarra.jpeg);
+}
+.logo img {
+    float: left;
+    width: 200px;
+    height: 80px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+#bars{
+    display: none;
+}
+main {
+    background-image: url(./../img/fondoDePag.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+    padding-top: 80px;
+}
+h3{
+    color: aliceblue;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 40px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.contenido{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    grid-template-rows: 250px;
+    justify-content: space-around;
+
+}
+.contenido2{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 340px 340px;
+    grid-template-rows: 250px;
+    justify-content: space-evenly;
+}
+.item:hover{
+    transform: scale(1.05);
+    transition: all 0.8s;
+    box-shadow: 2px 2px 5px #333;
+}
+.item{
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.contenido-imagenes1{
+    background-image: url(./../img/musculacion.jpeg);
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+
+}
+.contenido-imagenes2{
+    background-image: url(./../img/crossfit.jpeg);
+    background-size: cover;
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+}
+.contenido-imagenes3{
+    background-image: url(./../img/boxeo.jpeg);
+    background-size: cover;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.imagen4{
+    background-image: url(./../img/funcional.jpeg);
+    background-size: cover;
+}
+.imagen5{
+    background-image: url(./../img/zumba.jpeg);
+    background-size: cover;
+}
+.text{
+    color: rgba(240, 248, 255, 0.596);
+    background-color: rgba(0, 0, 0, 0.38);
+    font-size: 20px;
+    padding-top: 20px;
+    height: 92px;
+    width: 340px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+footer {
+    background-image: url(./../img/fondoDeBarra.jpeg);
+    width: 100%;
+    height: 120px;
+}
+footer .autor{
+    font-family: 'DM Sans', sans-serif;
+    padding-top: 15px;
+    padding-left: 20px;
+    color: aliceblue;
+}
+footer .derechos {
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    color: aliceblue;
+    
+}
+footer .redes {
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 8px;
+    letter-spacing: 15px;
+
+}
+@media (max-width: 1024px) {
+    
+}
