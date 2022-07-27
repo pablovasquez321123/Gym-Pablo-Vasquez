@@ -3,19 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .barra {
     display: flex;
     justify-content: end;
 }
+
 .barra ul {
     list-style: none;
     float: right;
 }
+
 .barra ul li {
     display: inline-block;
     border-radius: 60px;
     line-height: 80px;
 }
+
 .barra ul li a {
     text-decoration: none;
     color: black;
@@ -26,21 +30,25 @@
     color: aliceblue;
     border-radius: 10px;
 }
-.barra ul li a:hover{
+
+.barra ul li a:hover {
     transition: 0.5s;
-    background-color:  rgba(152, 151, 151, 0.263);
+    background-color: rgba(152, 151, 151, 0.263);
 }
+
 .header {
     height: 80px;
     width: 100%;
     background-image: url(./../img/fondoDeBarra.jpeg);
 }
+
 .logo img {
     float: left;
     width: 200px;
     height: 80px;
 }
-.checkbtn{
+
+.checkbtn {
     font-size: 30px;
     color: #fff;
     float: right;
@@ -49,9 +57,11 @@
     cursor: pointer;
     display: none;
 }
-#bars{
+
+#bars {
     display: none;
 }
+
 main {
     background-image: url(./../img/fondoDePag.jpeg);
     background-size: cover;
@@ -60,6 +70,7 @@ main {
     width: 100%;
     padding-top: 80px;
 }
+
 h1 {
     color: aliceblue;
     margin-bottom: 50px;
@@ -67,15 +78,18 @@ h1 {
     text-align: center;
     font-family: 'ABeeZee', sans-serif;
 }
-img{
+
+img {
     margin-left: 4px;
     border-radius: 5px;
 }
-.imagen-de-img:hover{
+
+.imagen-de-img:hover {
     transform: scale(1.04);
     transition: all 0.8s;
     box-shadow: 2px 2px 5px black;
 }
+
 .subtitle {
     font-size: 27px;
     padding-top: 8px;
@@ -85,6 +99,7 @@ img{
     height: 110px;
     background-color: rgba(0, 0, 0, 0.412);
 }
+
 p.invitacion {
     padding-top: 5px;
     padding-left: 7px;
@@ -94,51 +109,60 @@ p.invitacion {
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.412);
 }
-section{
+
+section {
     background-color: rgba(0, 0, 0, 0.562);
 }
-.h3-comentarios{
+
+.h3-comentarios {
     background-color: black;
     padding-top: 12px;
     padding-bottom: 12px;
     font-size: 23px;
 }
-.text-comentarios{
+
+.text-comentarios {
     display: grid;
     grid-template-columns: 250px 250px 250px;
     justify-content: space-around;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-h3{
+
+h3 {
     background-color: rgb(0, 0, 0);
     text-align: center;
     color: aliceblue;
     padding: 5px;
 }
-.coment p{
+
+.coment p {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.516);
     color: aliceblue;
     border: solid 3px black;
 }
+
 footer {
     background-image: url(./../img/fondoDeBarra.jpeg);
     width: 100%;
     height: 120px;
 }
-footer .autor{
+
+footer .autor {
     font-family: 'DM Sans', sans-serif;
     padding-top: 15px;
     padding-left: 20px;
     color: aliceblue;
 }
+
 footer .derechos {
     font-family: 'DM Sans', sans-serif;
     text-align: center;
     color: aliceblue;
-    
+
 }
+
 footer .redes {
     font-size: 40px;
     color: aliceblue;
@@ -147,105 +171,130 @@ footer .redes {
     letter-spacing: 15px;
 
 }
+
 @media (max-width: 1024px) {
-    .barra ul li a{
+    .barra ul li a {
         font-size: 22px;
         margin: 5px;
     }
-    .barra ul{
+
+    .barra ul {
         margin-top: 5px;
     }
-    .barra ul li{
+
+    .barra ul li {
         line-height: 70px;
     }
-    main{
+
+    main {
         padding-top: 50px;
     }
-    h1{
+
+    h1 {
         font-size: 28px;
         background-color: rgba(0, 0, 0, 0.38);
     }
-    .img{
+
+    .img {
         display: flex;
         justify-content: center;
         margin-bottom: 30px;
     }
-    .imagen-de-img{
+
+    .imagen-de-img {
         width: 550px;
     }
-    .subtitle{
+
+    .subtitle {
         font-size: 20px;
         padding-right: 10px;
         height: 70px;
     }
-    p.invitacion{
+
+    p.invitacion {
         font-size: 18px;
         height: 130px;
         width: 410px;
     }
-    footer{
+
+    footer {
         height: 89px;
     }
-    footer .autor{
+
+    footer .autor {
         padding-top: 8px;
         padding-bottom: 2px;
         font-size: 13px;
     }
-    footer .derechos{
+
+    footer .derechos {
         font-size: 15px;
     }
-    footer .redes{
+
+    footer .redes {
         font-size: 25px;
         letter-spacing: 10px;
     }
 }
+
 @media (max-width: 800px) {
-    .barra ul li a{
+    .barra ul li a {
         font-size: 18px;
         margin: 5px;
     }
-    .barra ul li{
+
+    .barra ul li {
         line-height: 60px;
     }
-    .header{
+
+    .header {
         height: 60px;
     }
-    .logo img{
+
+    .logo img {
         height: 60px;
         width: 150px;
     }
-    main{
+
+    main {
         padding-top: 50px;
     }
-    h1{
+
+    h1 {
         font-size: 24px;
         background-color: rgba(0, 0, 0, 0.38);
     }
-    .img{
+
+    .img {
         display: flex;
         justify-content: center;
         margin-bottom: 30px;
     }
-    .imagen-de-img{
+
+    .imagen-de-img {
         width: 410px;
     }
-    .subtitle{
+
+    .subtitle {
         font-size: 20px;
         padding-right: 10px;
         height: 70px;
     }
-    p.invitacion{
+
+    p.invitacion {
         font-size: 18px;
         height: 130px;
         width: 410px;
     }
 }
+
 @media (max-width: 650px) {
-    .checkbtn{
+    .checkbtn {
         display: block;
         line-height: 65px;
     }
-    .barra ul{
+
+    .barra ul {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -256,42 +305,51 @@ footer .redes {
         text-align: center;
         transition: all 0.5s;
     }
-    .barra ul li{
+
+    .barra ul li {
         display: block;
         margin: 40px 0;
         line-height: 30px;
     }
-    .barra ul li a{
+
+    .barra ul li a {
         font-size: 20px;
         margin: 0px;
     }
-    .barra ul li a:hover{
+
+    .barra ul li a:hover {
         transition: 0.5s;
-        background-color:  rgba(81, 79, 79, 0.724);
+        background-color: rgba(81, 79, 79, 0.724);
     }
-    #bars:checked ~ ul{
-        left:0;
+
+    #bars:checked~ul {
+        left: 0;
     }
-    main{
+
+    main {
         padding-top: 40px;
         height: auto;
     }
-    h1{
+
+    h1 {
         font-size: 22px;
         padding-bottom: 0px;
         background-color: rgba(0, 0, 0, 0.38);
     }
-    .img{
+
+    .img {
         display: flex;
         width: 100%;
         justify-content: center;
         margin-top: 40px;
     }
-    .imagen-de-img{
+
+    .imagen-de-img {
         width: 350px;
         margin-bottom: 15px;
     }
-    .subtitle{
+
+    .subtitle {
         margin-top: 50px;
         font-size: 20px;
         width: 270px;
@@ -299,7 +357,8 @@ footer .redes {
         height: 60px;
 
     }
-    p.invitacion{
+
+    p.invitacion {
         font-size: 15px;
         height: 80px;
         width: 390px;
@@ -307,29 +366,35 @@ footer .redes {
     }
 
 }
+
 @media (max-width: 425px) {
-    footer{
+    footer {
         height: 75px;
     }
-    footer .autor{
+
+    footer .autor {
         padding-top: 2px;
         font-size: 11px;
         padding-bottom: 3px;
     }
-    footer .derechos{
+
+    footer .derechos {
         font-size: 10px;
     }
 }
+
 @media (max-width: 375px) {
-    .imagen-de-img{
+    .imagen-de-img {
         width: 330px;
         margin-bottom: 5px;
     }
-    p.invitacion{
+
+    p.invitacion {
         width: 350px;
         padding-bottom: 120px;
     }
-    footer .redes{
+
+    footer .redes {
         font-size: 23px;
         letter-spacing: 10px;
         padding-top: 2px;

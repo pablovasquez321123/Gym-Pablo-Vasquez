@@ -1,60 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../css/sobrenosotros.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=DM+Sans:ital@1&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=ABeeZee&family=DM+Sans:ital@1&family=Rubik+Moonrocks&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/sobrenosotros.css">
     <title>Magnumfitness</title>
 </head>
+
 <body>
-    <header class="header">
+    <!-- navbar inicio -->
+    <header class="header sticky-top">
         <div class="logo"><img src="./../img/logo.png" alt="Magnumfitness"></div>
-            <nav class="barra">
-                <input type="checkbox"id="bars">
-        <label for="bars" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-                <ul>
-                    <li><a href="./../index.html">Inicio</a></li>
-                    <li><a href="./../pages/sobrenosotros.html">Sobre nosotros</a></li>
-                    <li><a href="./../pages/clases.html">Clases</a></li>
-                    <li><a href="./../pages/precios.html">Precios</a></li>
-                    <li><a href="./../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+        <nav class="barra">
+            <input type="checkbox" id="bars">
+            <label for="bars" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="./../index.html">Inicio</a></li>
+                <li><a href="./../pages/sobrenosotros.html">Sobre nosotros</a></li>
+                <li><a href="./../pages/clases.html">Clases</a></li>
+                <li><a href="./../pages/precios.html">Precios</a></li>
+                <li><a href="./../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-            <main>
-                <div class="h1"><h1>Sobre nosotros</h1></div>
-                <p class="bibliografia">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsam similique vel atque molestiae natus, enim vitae nulla inventore. Saepe ipsa iure dolorum atque et numquam officiis soluta odit Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, vel alias quas ullam, doloribus, distinctio quia tempore cumque voluptatibus voluptatum labore reprehenderit exercitationem modi consequatur eum esse ipsam non atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates quod, consequatur voluptas illo quam quaerat vel, itaque excepturi maiores alias sapiente mollitia eveniet commodi corrupti, quae velit hic dolore!
-                </p>
-                <div class="contenedor">
-                    <div class="cont item item1"></div>
-                    <div class="cont item item2"></div>
-                    <div class="cont item item3"></div>
+    <!-- navbar fin -->
+
+    <main>
+        <div class="h1">
+            <h1>Sobre nosotros</h1>
+        </div>
+        <p class="bibliografia">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsam similique vel atque molestiae natus,
+            enim vitae nulla inventore. Saepe ipsa iure dolorum atque et numquam officiis soluta odit Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Et, vel alias quas ullam, doloribus, distinctio quia tempore cumque.
+        </p>
+
+        <!-- section habitaciones inicio -->
+        <section class="container-fluid habitaciones">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="caja-habitaciones">
+                        <h4>Esfuerzo</h4>
+                        <img src="./../img/esfuerzo.jpg" alt="lol" class="img-fluid">
+                        <div data-aos="zoom-in">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolores, dolore
+                                nesciunt
+                                harum vel voluptas ex modi iste facilis, quis quibusdam? Alias cupiditate ipsam sunt!
+                                Eos
+                                perspiciatis laboriosam maxime qui.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="contenedor-text">
-                <div class="cont text text1"><p> ESFUERZO: <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste repudiandae beatae autem debitis magni incidunt ipsam odit nesciunt temporibus eaque non quidem fugiat aliquid, error quae officiis laboriosam nostrum.</p></div>
-
-                <div class="cont text text2"><p> DEDICACIÓN: <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste repudiandae beatae autem debitis magni incidunt ipsam odit nesciunt temporibus eaque non quidem fugiat aliquid, error quae officiis laboriosam nostrum.</p></div>
-
-                <div class="cont text text3"><p> CONSTANCIA: <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste repudiandae beatae autem debitis magni incidunt ipsam odit nesciunt temporibus eaque non quidem fugiat aliquid, error quae officiis laboriosam nostrum.</p></div>
+                <div class="col-md-4">
+                    <div class="caja-habitaciones">
+                        <h4>Dedicacion</h4>
+                        <img src="./../img/dedicacion.jpg" alt="lol" class="img-fluid">
+                        <div data-aos="zoom-in">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolores, dolore
+                                nesciunt
+                                harum vel voluptas ex modi iste facilis, quis quibusdam? Alias cupiditate ipsam sunt!
+                                Eos
+                                perspiciatis laboriosam maxime qui.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="caja-habitaciones">
+                        <h4>Constancia</h4>
+                        <img src="./../img/constancia.jpg.jpeg" alt="lol" class="img-fluid">
+                        <div data-aos="zoom-in">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolores, dolore
+                                nesciunt
+                                harum vel voluptas ex modi iste facilis, quis quibusdam? Alias cupiditate ipsam sunt!
+                                Eos
+                                perspiciatis laboriosam maxime qui.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+        <!-- section habitaciones inicio -->
 
-            </main>
-    
+
+    </main>
+    <!-- footer inicio -->
     <footer>
-        <p><div class="autor"><strong>Autor</strong>: Pablo Vasquez</div></p>
-        <p><div class="derechos">Copyright&copy; 2022 - Página creada por pablo_vz - Todos los derechos reservados</div></p>
+        <div class="autor"><strong>Autor</strong>: Pablo Vasquez</div>
+        <div class="derechos">Copyright&copy; 2022 - Página creada por pablo_vz - Todos los derechos reservados</div>
         <div class="redes">
             <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
         </div>
     </footer>
+    <!-- footer fin -->
+
+    <!-- scrips inicio -->
+
+    <!-- scrip  bootstrap inicio-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <!-- scrip bootstrap fin -->
+
+    <!-- scrip AOS inicio -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- scrip AOS fin -->
+
+    <!-- scrips fin -->
 </body>
+
 </html>
