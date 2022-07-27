@@ -1,59 +1,165 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../css/clases.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=DM+Sans:ital@1&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=ABeeZee&family=DM+Sans:ital@1&family=Rubik+Moonrocks&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/clases.css">
     <title>Magnumfitness</title>
 </head>
-<body>
-        <header class="header">
-            <div class="logo"><img src="./../img/logo.png" alt="Magnumfitness"></div>
-            <nav class="barra">
-                <input type="checkbox"id="bars">
-        <label for="bars" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-                <ul>
-                    <li><a href="./../index.html">Inicio</a></li>
-                    <li><a href="./../pages/sobrenosotros.html">Sobre nosotros</a></li>
-                    <li><a href="./../pages/clases.html">Clases</a></li>
-                    <li><a href="./../pages/precios.html">Precios</a></li>
-                    <li><a href="./../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-    <main>
-    <h3>Contamos con las siguientes clases!</h3>
-    <div class="contenido">
-        <div class="item contenido-imagenes1"></div>
-        <div class="item contenido-imagenes2"></div>
-        <div class="item contenido-imagenes3"></div>
-        <div class="text"><p><strong>Contamos con las mejores maquinas para musculación</strong></p></div>
-        <div class="text"><p><strong>Tenemos a los mejores entrenadores en crossfit</strong></p></div>
-        <div class="text"><p>Contamos con un excelente lugar para entrenar boxeo</strong></p></div>
-    </div> <br>
-    <div class="contenido2">
-        <div class="item imagen4"></div>
-        <div class=" item imagen5"></div>
-        <div class="text"><p><strong>Tenemos funcional para principiantes con ganas de ser grandes</strong></p></div>
-        <div class="text"><p><strong>Podras disfrutar de zumba</strong></p></div>
-    </div>
-</main>
 
-    
-<footer>
-    <p><div class="autor"><strong>Autor</strong>: Pablo Vasquez</div></p>
-    <p><div class="derechos">Copyright&copy; 2022 - Página creada por pablo_vz - Todos los derechos reservados</div></p>
-    <div class="redes">
-        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-    </div>
-</footer>
+<body>
+
+    <!-- navbar inicio -->
+    <header class="header sticky-top">
+        <div class="logo"><img src="./../img/logo.png" alt="Magnumfitness"></div>
+        <nav class="barra">
+            <input type="checkbox" id="bars">
+            <label for="bars" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="./../index.html">Inicio</a></li>
+                <li><a href="./../pages/sobrenosotros.html">Sobre nosotros</a></li>
+                <li><a href="./../pages/clases.html">Clases</a></li>
+                <li><a href="./../pages/precios.html">Precios</a></li>
+                <li><a href="./../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar fin -->
+
+    <main>
+        <!-- inicio jumbotron -->
+        <div class="container">
+            <div data-aos="flip-up">
+                <div class="jumbotron text-center">
+                    <h1>Contamos con estas clases</h1>
+                    <p>Esperemos que sean de tu agrado y las disfrutes al maximo!</p>
+                </div>
+            </div>
+        </div>
+        <!-- fin jumbotron -->
+
+        <!-- inicio de section clases -->
+        <section class="container-fluid gym">
+            <div class="row justify-content-around text-center">
+                <div class="col-md-4">
+                    <div class="caja-gym-clases">
+                        <h4>Musculacion</h4>
+                        <div data-aos="zoom-out-right"><img src="./../img/musculacion.jpeg" alt="musculacion" class="img-fluid"></div>
+                        <div data-aos="zoom-in">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolores, dolore
+                                nesciunt
+                                harum vel voluptas ex modi iste facilis, quis quibusdam? Alias cupiditate ipsam sunt!
+                                Eos
+                                perspiciatis laboriosam maxime qui.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="caja-gym-clases">
+                        <h4>Crossfit</h4>
+                        <div data-aos="zoom-out-up"><img src="./../img/crossfit.jpeg" alt="crossfit" class="img-fluid"></div>
+                        <div data-aos="zoom-in">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolores, dolore
+                                nesciunt
+                                harum vel voluptas ex modi iste facilis, quis quibusdam? Alias cupiditate ipsam sunt!
+                                Eos
+                                perspiciatis laboriosam maxime qui.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="caja-gym-clases">
+                        <h4>Funcional</h4>
+                        <div data-aos="zoom-out-left"><img src="./../img/funcional.jpeg" alt="funcional" class="img-fluid"></div>
+                        <div data-aos="zoom-in">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolores, dolore
+                                nesciunt
+                                harum vel voluptas ex modi iste facilis, quis quibusdam? Alias cupiditate ipsam sunt!
+                                Eos
+                                perspiciatis laboriosam maxime qui.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="caja-gym-clases">
+                        <h4>Boxeo</h4>
+                        <div data-aos="zoom-out-right"><img src="./../img/boxeo.jpeg" alt="boxeo" class="img-fluid"></div>
+                        <div data-aos="zoom-in">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolores, dolore
+                                nesciunt
+                                harum vel voluptas ex modi iste facilis, quis quibusdam? Alias cupiditate ipsam sunt!
+                                Eos
+                                perspiciatis laboriosam maxime qui.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="caja-gym-clases">
+                        <h4>Zumba</h4>
+                        <div data-aos="zoom-out-left"><img src="./../img/zumba.jpeg" alt="zumba" class="img-fluid"></div>
+                        <div data-aos="zoom-in">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolores, dolore
+                                nesciunt
+                                harum vel voluptas ex modi iste facilis, quis quibusdam? Alias cupiditate ipsam sunt!
+                                Eos
+                                perspiciatis laboriosam maxime qui.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- inicio de section clases -->
+    </main>
+
+
+    <!-- footer inicio -->
+    <footer>
+        <div class="autor"><strong>Autor</strong>: Pablo Vasquez</div>
+        <div class="derechos">Copyright&copy; 2022 - Página creada por pablo_vz - Todos los derechos reservados</div>
+        <div class="redes">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+    <!-- footer fin -->
+
+    <!-- scrips inicio -->
+
+    <!-- scrip  bootstrap inicio-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <!-- scrip bootstrap fin -->
+
+    <!-- scrip AOS inicio -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- scrip AOS fin -->
+
+    <!-- scrips fin -->
 </body>
+
 </html>

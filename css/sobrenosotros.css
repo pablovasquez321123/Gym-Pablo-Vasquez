@@ -88,14 +88,14 @@ main {
     margin-bottom: 80px;
 }
 
-.caja-habitaciones {
+.caja-gym {
     background-color: rgba(0, 0, 0, 0.755);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin-bottom: 110px;
 }
 
-.habitaciones h4 {
+.gym h4 {
     text-align: center;
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -113,7 +113,7 @@ main {
     border-radius: 10px;
 }
 
-.habitaciones p {
+.gym p {
     color: aliceblue;
     padding: 10%;
     font-family: Georgia, 'Times New Roman', Times, serif;
