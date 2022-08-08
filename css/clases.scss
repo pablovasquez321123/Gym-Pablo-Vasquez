@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header {
+    height: 80px;
+    width: 100%;
+    background-image: url(./../img/fondoDeBarra.jpeg);
+    img {
+        float: left;
+        width: 200px;
+        height: 80px;
+    }
+    .barra {
+        display: flex;
+        justify-content: end;
+    }
+    ul {
+        list-style: none;
+        float: right;
+    }
+    ul li {
+        display: inline-block;
+        border-radius: 60px;
+        line-height: 80px;
+    }
+    ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        margin: 10px;
+        padding: 5px;
+        font-family: 'DM Sans', sans-serif;
+        color: aliceblue;
+        border-radius: 10px;
+    }
+    ul li a:hover {
+        transition: 0.5s;
+        background-color: rgba(152, 151, 151, 0.263);
+    }
+    
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#bars {
+    display: none;
+}
+
+main {
+    background-image: url(./../img/fondoDePag.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+    padding-top: 80px;
+}
+
+
+.container-fluid{
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 0 2px black;
+    padding-bottom: 100px;
+}
+.jumbotron {
+    background-image: url(./../img/fondo-jumbotron.jpeg);
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+    text-shadow: 0 0 10px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 100px;
+}
+.caja-gym-clases{
+    background-color: rgba(0, 0, 0, 0.661);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.caja-gym-clases h4{
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px;
+    margin: 0;
+}
+.caja-gym-clases p{
+    padding: 10px;
+}
+
+footer {
+    background-image: url(./../img/fondoDeBarra.jpeg);
+    width: 100%;
+    height: 90px;
+    .autor {
+        font-family: 'DM Sans', sans-serif;
+        padding-top: 5px;
+        padding-left: 20px;
+        color: aliceblue;
+    }
+    .derechos {
+        font-family: 'DM Sans', sans-serif;
+        text-align: center;
+        color: aliceblue;
+    }
+    .redes {
+        font-size: 25px;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+    }
+    .redes a {
+        color: aliceblue;
+        margin: 0 10px;
+    }
+    .redes a:hover {
+        color: rgba(148, 141, 141, 0.589);
+        transform: translateY(-10px);
+        transition: 1.1s;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header{
+        ul {
+            margin-top: 5px;
+        }
+        ul li {
+            line-height: 70px;
+        }
+        ul li a {
+            font-size: 22px;
+            margin: 5px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+        height: 60px;
+        img {
+            height: 60px;
+            width: 150px;
+        }
+        ul li {
+            line-height: 60px;
+        }
+        ul li a {
+            font-size: 18px;
+            margin: 5px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .checkbtn {
+        display: block;
+        line-height: 65px;
+    }
+
+    #bars:checked~ul {
+        left: 0;
+    }
+
+    .header{
+        ul {
+            position: fixed;
+            width: 100%;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.553);
+            top: 55px;
+            padding-top: 50px;
+            left: -100%;
+            text-align: center;
+            transition: all 0.5s;
+        }
+        ul li {
+            display: block;
+            margin: 40px 0;
+            line-height: 30px;
+        }
+        ul li a {
+            font-size: 20px;
+            margin: 0px;
+        }
+        ul li a:hover {
+            transition: 0.5s;
+            background-color: rgba(81, 79, 79, 0.724);
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        height: 75px;
+        .autor {
+            font-size: 12px;
+        }
+        .derechos {
+            font-size: 12px;
+        }
+        .redes a {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    footer {
+        height: 75;
+        .autor {
+            padding-top: 2px;
+            font-size: 11px;
+            padding-bottom: 3px;
+        }
+        .derechos {
+            font-size: 10px;
+        }
+        .redes {
+            font-size: 20px;
+        }
+    }
+}

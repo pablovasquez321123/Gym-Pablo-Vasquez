@@ -1,266 +1,301 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.barra {
-    display: flex;
-    justify-content: end;
-}
-.barra ul {
-    list-style: none;
-    float: right;
-}
-.barra ul li {
-    display: inline-block;
-    border-radius: 60px;
-    line-height: 80px;
-}
-.barra ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 25px;
-    margin: 10px;
-    padding: 5px;
-    font-family: 'DM Sans', sans-serif;
-    color: aliceblue;
-    border-radius: 10px;
-}
-.barra ul li a:hover{
-    transition: 0.5s;
-    background-color:  rgba(152, 151, 151, 0.263);
-}
+
 .header {
-    height: 80px;
-    width: 100%;
-    background-image: url(./../img/fondoDeBarra.jpeg);
+  height: 80px;
+  width: 100%;
+  background-image: url(./../img/fondoDeBarra.jpeg);
 }
-.logo img {
-    float: left;
-    width: 200px;
-    height: 80px;
+.header img {
+  float: left;
+  width: 200px;
+  height: 80px;
 }
-.checkbtn{
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 20px;
-    cursor: pointer;
-    display: none;
+.header .barra {
+  display: flex;
+  justify-content: end;
 }
-#bars{
-    display: none;
+.header ul {
+  list-style: none;
+  float: right;
 }
+.header ul li {
+  display: inline-block;
+  border-radius: 60px;
+  line-height: 80px;
+}
+.header ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  margin: 10px;
+  padding: 5px;
+  font-family: "DM Sans", sans-serif;
+  color: aliceblue;
+  border-radius: 10px;
+}
+.header ul li a:hover {
+  transition: 0.5s;
+  background-color: rgba(152, 151, 151, 0.263);
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#bars {
+  display: none;
+}
+
 main {
-    background-image: url(./../img/fondoDePag.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: auto;
-    width: 100%;
-    padding-top: 80px;
+  background-image: url(./../img/fondoDePag.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  width: 100%;
+  padding-top: 80px;
 }
-h1{
-    color: aliceblue;
-    font-size: 40px;
-    font-family: 'ABeeZee', sans-serif;
-    margin-bottom: 50px;
-    margin-left: 20px;
+
+h1 {
+  color: aliceblue;
+  font-size: 40px;
+  font-family: "ABeeZee", sans-serif;
+  margin-bottom: 50px;
+  text-align: center;
+  text-shadow: 0 0 2px white;
+  text-transform: uppercase;
 }
-.form{
-    color: aliceblue;
-    height: auto;
-    width: 300px;
-    background-image: url(./../img/fondoDeBarra.jpeg);
-    border-radius: 7px;
+
+.container-form {
+  justify-content: center;
+  display: flex;
 }
+
+.form {
+  color: aliceblue;
+  height: auto;
+  width: 100vh;
+  background-image: url(./../img/fondoDeBarra.jpeg);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+}
+
 fieldset {
-    background-color: transparent;
-    border-color: transparent;
+  background-color: transparent;
+  border-color: transparent;
 }
-legend{
-    font-size: 22px;
-    text-align: center;
+
+legend {
+  font-size: 22px;
+  text-align: center;
+  padding-top: 20px;
 }
-h4{
-    color: aliceblue;
-    padding-left: 20px;
-    font-size: 20px;
+
+strong {
+  text-transform: uppercase;
+  text-shadow: 0 0 10px black;
 }
-.sexo{
-    padding-left: 20px;
+
+h4 {
+  color: aliceblue;
+  font-size: 20px;
 }
-form p{
-    text-align: center;
+
+.sexo {
+  display: inline-block;
+  margin: 10px;
 }
-.edad{
-    text-align: center;
+
+form p {
+  text-align: center;
 }
-.oferta{
-    text-align: center;
+
+.edad, .submit, .oferta {
+  text-align: center;
 }
-.oferta label{
-    font-size: 20px;
+
+.oferta {
+  text-shadow: 0 0 5px black;
 }
-.submit{
-    text-align: center;
+
+.oferta label {
+  font-size: 20px;
 }
-.parrafo{
-        color: aliceblue;
-        font-size: 18px;
-        padding-top: 40px;
-        padding-left: 8px;
-        height: 170px;
-        width: 300px;
-        background-color:rgba(0, 0, 0, 0.38);
-        border-radius: 5px;
+
+.submit {
+  margin-bottom: 20px;
 }
+
+.submit:hover {
+  transform: scale(1.7);
+  transition: all 1.2s;
+}
+
+.container_txt {
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.38);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.container_txt .txt {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: aliceblue;
+  height: 80px;
+  text-align: center;
+  width: 300px;
+  padding: 10px;
+}
+.container_txt .txt a {
+  color: aliceblue;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 footer {
-    background-image: url(./../img/fondoDeBarra.jpeg);
-    width: 100%;
-    height: 120px;
+  background-image: url(./../img/fondoDeBarra.jpeg);
+  width: 100%;
+  height: 90px;
 }
-footer .autor{
-    font-family: 'DM Sans', sans-serif;
-    padding-top: 15px;
-    padding-left: 20px;
-    color: aliceblue;
+footer .autor {
+  font-family: "DM Sans", sans-serif;
+  padding-top: 5px;
+  padding-left: 20px;
+  color: aliceblue;
 }
 footer .derechos {
-    font-family: 'DM Sans', sans-serif;
-    text-align: center;
-    color: aliceblue;
-    
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  color: aliceblue;
 }
 footer .redes {
-    font-size: 40px;
-    color: aliceblue;
-    text-align: center;
-    padding-top: 8px;
-    letter-spacing: 15px;
-
-
+  font-size: 25px;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
 }
+footer .redes a {
+  color: aliceblue;
+  margin: 0 10px;
+}
+footer .redes a:hover {
+  color: rgba(148, 141, 141, 0.589);
+  transform: translateY(-10px);
+  transition: 1.1s;
+}
+
 @media (max-width: 1024px) {
-    .barra ul li a{
-        font-size: 22px;
-        margin: 5px;
-    }
-    .barra ul{
-        margin-top: 5px;
-    }
-    .barra ul li{
-        line-height: 70px;
-    }
-    main{
-        padding-top: 50px;
-    }
-    h1{
-        font-size: 28px;
-        background-color: rgba(0, 0, 0, 0.38);
-    }
-    footer{
-        height: 89px;
-    }
-    footer .autor{
-        padding-top: 8px;
-        padding-bottom: 2px;
-        font-size: 13px;
-    }
-    footer .derechos{
-        font-size: 15px;
-    }
-    footer .redes{
-        font-size: 25px;
-        letter-spacing: 10px;
-    }
+  .header ul {
+    margin-top: 5px;
+  }
+  .header ul li {
+    line-height: 70px;
+  }
+  .header ul li a {
+    font-size: 22px;
+    margin: 5px;
+  }
+  main {
+    padding-top: 50px;
+  }
+  h1 {
+    font-size: 28px;
+  }
 }
 @media (max-width: 800px) {
-    .barra ul li a{
-        font-size: 18px;
-        margin: 5px;
-    }
-    .barra ul li{
-        line-height: 50px;
-    }
-    .header{
-        height: 60px;
-    }
-    .logo img{
-        height: 60px;
-        width: 150px;
-    }
-    main{
-        padding-top: 50px;
-    }
-    h1{
-        font-size: 24px;
-        background-color: rgba(0, 0, 0, 0.38);
-    }
+  .header {
+    height: 60px;
+  }
+  .header img {
+    height: 60px;
+    width: 150px;
+  }
+  .header ul li {
+    line-height: 60px;
+  }
+  .header ul li a {
+    font-size: 18px;
+    margin: 5px;
+  }
+  h1 {
+    font-size: 24px;
+  }
 }
-@media (max-width: 650px) {
-    .checkbtn{
-        display: block;
-        line-height: 65px;
-    }
-    .barra ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.553);
-        top: 60px;
-        padding-top: 50px;
-        left: -100%;
-        text-align: center;
-        transition: all 0.5s;
-    }
-    .barra ul li{
-        display: block;
-        margin: 40px 0;
-        line-height: 30px;
-    }
-    .barra ul li a{
-        font-size: 20px;
-        margin: 0px;
-    }
-    .barra ul li a:hover{
-        transition: 0.5s;
-        background-color:  rgba(81, 79, 79, 0.724);
-    }
-    #bars:checked ~ ul{
-        left:0;
-    }
-    main{
-        padding-top: 40px;
-        height: auto;
-    }
-    h1{
-        font-size: 28px;
-        margin-bottom: 20px;
-        background-color: rgba(0, 0, 0, 0.38);
-    }
+@media (max-width: 767px) {
+  .checkbtn {
+    display: block;
+    line-height: 65px;
+  }
+  #bars:checked ~ ul {
+    left: 0;
+  }
+  .header ul {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.553);
+    top: 55px;
+    padding-top: 50px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .header ul li {
+    display: block;
+    margin: 40px 0;
+    line-height: 30px;
+  }
+  .header ul li a {
+    font-size: 20px;
+    margin: 0px;
+  }
+  .header ul li a:hover {
+    transition: 0.5s;
+    background-color: rgba(81, 79, 79, 0.724);
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    height: 75px;
+  }
+  footer .autor {
+    font-size: 12px;
+  }
+  footer .derechos {
+    font-size: 12px;
+  }
+  footer .redes a {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 425px) {
-    h1{
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
-    footer{
-        height: 75px;
-    }
-    footer .autor{
-        padding-top: 2px;
-        font-size: 11px;
-        padding-bottom: 3px;
-    }
-    footer .derechos{
-        font-size: 10px;
-    }
-}
-@media (max-width: 375px) {
-    footer .redes{
-        font-size: 23px;
-        letter-spacing: 10px;
-        padding-top: 2px;
-    }
-}
+  h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  footer {
+    height: 75;
+  }
+  footer .autor {
+    padding-top: 2px;
+    font-size: 11px;
+    padding-bottom: 3px;
+  }
+  footer .derechos {
+    font-size: 10px;
+  }
+  footer .redes {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=contacto.css.map */
