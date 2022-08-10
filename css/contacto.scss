@@ -105,24 +105,16 @@ h4{
     display: inline-block;
     margin: 10px;
 }
-form p{
-    text-align: center;
-}
 .edad{
-    text-align: center;
+    @extend .sexo;
 }
-//uso del extend
 .oferta{
-    @extend .edad;
-    text-shadow: 0 0 5px black;
+    margin-top: 10px;
+    margin-left: 20px;
 }
-.oferta label{
-    font-size: 20px;
-}
-//uso del extend
 .submit{
-    @extend .edad;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
 }
 .submit:hover{
     transform: scale(1.7);
