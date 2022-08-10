@@ -38,10 +38,10 @@
     <main>
         <h1>Registrate!</h1>
         <div class="container-form">
-            <form name="contacto" netlify class="form" >
+            <form name="contacto" netlify method="post" class="form" >
                 <fieldset>
                     <legend><strong>Introduce tus datos!</strong></legend> <br>
-                    <form>
+                    <form name="contacto" netlify>
                         <h4>Sexo:</h4> <br>
                         <div class="sexo">Hombre<input type="radio" name="sexo" value="Hombre"></div>
                         <div class="sexo">Mujer<input type="radio" name="sexo" value="Mujer"></div>
@@ -54,7 +54,7 @@
                         <label for="apellido">Apellido:</label> <br>
                         <input type="text" name="apellido" placeholder="apellido" required="">
                     </form> <br>
-                    <form>
+                    <form name="contacto" netlify>
                         <label for="Email">Email</label> <br>
                         <input type="email" name="email" placeholder="Email">
                     </form> <br>
