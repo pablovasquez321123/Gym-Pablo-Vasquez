@@ -7,7 +7,7 @@
 .header {
   height: 80px;
   width: 100%;
-  background-image: url(./../img/fondoDeBarra.jpeg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0), black), url(./../img/fondoDeBarra.jpeg);
 }
 .header img {
   float: left;
@@ -109,7 +109,7 @@ main {
 
 .gym p {
   color: aliceblue;
-  padding: 10%;
+  padding: 5%;
   font-family: Georgia, "Times New Roman", Times, serif;
   text-shadow: 0 0 1px black;
 }
@@ -179,7 +179,7 @@ footer .redes a:hover {
     position: fixed;
     width: 100%;
     height: auto;
-    background-color: rgba(0, 0, 0, 0.553);
+    background-color: rgba(0, 0, 0, 0.892);
     top: 55px;
     padding-top: 50px;
     left: -100%;
@@ -209,6 +209,9 @@ footer .redes a:hover {
   .row img:hover {
     transform: none;
     transition: none;
+  }
+  main {
+    background-size: cover;
   }
 }
 @media (max-width: 600px) {

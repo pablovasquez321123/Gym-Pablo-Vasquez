@@ -3,28 +3,34 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .header {
     height: 80px;
     width: 100%;
-    background-image: url(./../img/fondoDeBarra.jpeg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(./../img/fondoDeBarra.jpeg);
+
     img {
         float: left;
         width: 200px;
         height: 80px;
     }
+
     .barra {
         display: flex;
         justify-content: end;
     }
+
     ul {
         list-style: none;
         float: right;
     }
+
     ul li {
         display: inline-block;
         border-radius: 60px;
         line-height: 80px;
     }
+
     ul li a {
         text-decoration: none;
         color: black;
@@ -35,11 +41,12 @@
         color: aliceblue;
         border-radius: 10px;
     }
+
     ul li a:hover {
         transition: 0.5s;
         background-color: rgba(152, 151, 151, 0.263);
     }
-    
+
 }
 
 .checkbtn {
@@ -62,66 +69,109 @@ main {
     background-position: center;
     height: auto;
     width: 100%;
-    padding-top: 80px;
 }
-
-
-.container-fluid{
-    color: aliceblue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 0 0 2px black;
-    padding-bottom: 100px;
-}
-.jumbotron {
-    background-image: url(./../img/fondo-jumbotron.jpeg);
+.contenedor_tittle {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), black), url(./../img/gradient.jpg);
+    height: 300px;
     background-position: center;
     background-size: cover;
+
+    .tittle {
+        display: flex;
+        justify-content: center;
+        padding-top: 70px;
+        color: aliceblue;
+        text-shadow: 0 0 10px black;
+    }
+
+    .tittle_txt {
+        color: aliceblue;
+    }
+}
+@mixin photo {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
     color: aliceblue;
-    text-shadow: 0 0 10px black;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 70px;
+    filter: brightness(0.5);
+    box-shadow: 0px 0px 20px black;
+    margin-top: 30px;
 }
-.caja-gym-clases{
-    background-color: rgba(0, 0, 0, 0.661);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.musculacion {
+    background-image: url(./../img/musculacion.jpg);
+    @include photo;
 }
-.caja-gym-clases h4{
-    background-color: black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 5px;
-    margin: 0;
+.musculacion:hover{
+    filter: none;
+    transition: 0.6s;
 }
-.caja-gym-clases p{
-    padding: 10px;
+.crossfit {
+    background-image: url(./../img/crossfit.jpg);
+    @include photo;
+}
+.crossfit:hover{
+    filter: none;
+    transition: 0.6s;
+}
+.boxeo{
+    background-image: url(./../img/boxeo.jpg);
+    @include photo;
+}
+.boxeo:hover{
+    filter: none;
+    transition: 0.6s;
+}
+.funcional{
+    background-image: url(./../img/funcional.jpg);
+    @include photo;
+}
+.funcional:hover{
+    filter: none;
+    transition: 0.6s;
+}
+.yoga{
+    background-image: url(./../img/yoga.jpg);
+    @include photo;
+}
+.yoga:hover{
+    filter: none;
+    transition: 0.6s;
 }
 
 footer {
-    background-image: url(./../img/fondoDeBarra.jpeg);
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0)), url(./../img/fondoDeBarra.jpeg);
     width: 100%;
     height: 90px;
+
     .autor {
         font-family: 'DM Sans', sans-serif;
         padding-top: 5px;
         padding-left: 20px;
         color: aliceblue;
     }
+
     .derechos {
         font-family: 'DM Sans', sans-serif;
         text-align: center;
         color: aliceblue;
     }
+
     .redes {
         font-size: 25px;
         color: aliceblue;
         display: flex;
         justify-content: center;
     }
+
     .redes a {
         color: aliceblue;
         margin: 0 10px;
     }
+
     .redes a:hover {
         color: rgba(148, 141, 141, 0.589);
         transform: translateY(-10px);
@@ -130,13 +180,15 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    .header{
+    .header {
         ul {
             margin-top: 5px;
         }
+
         ul li {
             line-height: 70px;
         }
+
         ul li a {
             font-size: 22px;
             margin: 5px;
@@ -147,13 +199,16 @@ footer {
 @media (max-width: 800px) {
     .header {
         height: 60px;
+
         img {
             height: 60px;
             width: 150px;
         }
+
         ul li {
             line-height: 60px;
         }
+
         ul li a {
             font-size: 18px;
             margin: 5px;
@@ -171,27 +226,30 @@ footer {
         left: 0;
     }
 
-    .header{
+    .header {
         ul {
             position: fixed;
             width: 100%;
             height: auto;
-            background-color: rgba(0, 0, 0, 0.553);
+            background-color: rgba(0, 0, 0, 0.892);
             top: 55px;
             padding-top: 50px;
             left: -100%;
             text-align: center;
             transition: all 0.5s;
         }
+
         ul li {
             display: block;
             margin: 40px 0;
             line-height: 30px;
         }
+
         ul li a {
             font-size: 20px;
             margin: 0px;
         }
+
         ul li a:hover {
             transition: 0.5s;
             background-color: rgba(81, 79, 79, 0.724);
@@ -202,12 +260,15 @@ footer {
 @media (max-width: 600px) {
     footer {
         height: 75px;
+
         .autor {
             font-size: 12px;
         }
+
         .derechos {
             font-size: 12px;
         }
+
         .redes a {
             font-size: 20px;
             margin-bottom: 0;
@@ -218,14 +279,17 @@ footer {
 @media (max-width: 425px) {
     footer {
         height: 75;
+
         .autor {
             padding-top: 2px;
             font-size: 11px;
             padding-bottom: 3px;
         }
+
         .derechos {
             font-size: 10px;
         }
+
         .redes {
             font-size: 20px;
         }

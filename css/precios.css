@@ -7,7 +7,7 @@
 .header {
   height: 80px;
   width: 100%;
-  background-image: url(./../img/fondoDeBarra.jpeg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0), black), url(./../img/fondoDeBarra.jpeg);
 }
 .header img {
   float: left;
@@ -91,26 +91,28 @@ td {
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.38);
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .musculacion {
-  background-image: url(./../img/musculacion.jpeg);
+  background-image: url(./../img/musculacion.jpg);
 }
 
 .crossfit {
-  background-image: url(./../img/crossfit.jpeg);
+  background-image: url(./../img/crossfit.jpg);
 }
 
 .funcional {
-  background-image: url(./../img/funcional.jpeg);
+  background-image: url(./../img/funcional.jpg);
 }
 
 .boxeo {
-  background-image: url(./../img/boxeo.jpeg);
+  background-image: url(./../img/boxeo.jpg);
 }
 
-.zumba {
-  background-image: url(./../img/zumba.jpeg);
+.yoga {
+  background-image: url(./../img/yoga.jpg);
 }
 
 .item:hover {
@@ -228,7 +230,7 @@ footer .redes a:hover {
     position: fixed;
     width: 100%;
     height: auto;
-    background-color: rgba(0, 0, 0, 0.553);
+    background-color: rgba(0, 0, 0, 0.892);
     top: 55px;
     padding-top: 50px;
     left: -100%;
