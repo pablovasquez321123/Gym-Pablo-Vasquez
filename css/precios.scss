@@ -88,7 +88,6 @@ td{
     background-position: center;
     background-color: rgba(0, 0, 0, 0.38);
     text-align: center;
-    text-transform: uppercase;
     text-shadow: 0 0 10px black;
 }
 .musculacion{
@@ -133,7 +132,7 @@ tr li{
 .video{
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.731);
+    background-color: rgba(0, 0, 0, 0.617);
 }
 footer {
     background-image: url(./../img/fondoDeBarra.jpeg);
@@ -305,14 +304,14 @@ footer {
         border-radius: 3px;
     }
     footer {
-        height: 75;
+        height: 90px;
         .autor {
             padding-top: 2px;
-            font-size: 11px;
+            font-size: 16px;
             padding-bottom: 3px;
         }
         .derechos {
-            font-size: 10px;
+            font-size: 16px;
         }
         .redes {
             font-size: 20px;
@@ -324,7 +323,7 @@ footer {
         font-size: 20px;
     }
     tr li{
-        font-size: 15px;
+        font-size: 16px;
         border-radius: 3px;
     }
     td{
