@@ -67,10 +67,12 @@ main {
 
 h1 {
   color: aliceblue;
-  font-size: 40px;
-  font-family: "ABeeZee", sans-serif;
+  font-size: 35px;
+  font-family: Georgia, "Times New Roman", Times, serif;
   margin-bottom: 50px;
   text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px black;
 }
 
 table {
@@ -93,6 +95,7 @@ td {
   background-color: rgba(0, 0, 0, 0.38);
   text-align: center;
   text-transform: uppercase;
+  text-shadow: 0 0 10px black;
 }
 
 .musculacion {
@@ -132,6 +135,21 @@ tr li {
   list-style: none;
   padding-left: 5px;
   border-radius: 3px;
+}
+
+.tittle_spinning {
+  color: aliceblue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.731);
 }
 
 footer {

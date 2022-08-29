@@ -78,6 +78,7 @@ h1 {
 .container-form {
   justify-content: center;
   display: flex;
+  text-align: center;
 }
 
 .form {
@@ -86,8 +87,7 @@ h1 {
   width: 100vh;
   background-image: url(./../img/fondoDeBarra.jpeg);
   border-radius: 7px;
-  display: flex;
-  justify-content: center;
+  text-transform: uppercase;
 }
 
 fieldset {
@@ -97,7 +97,6 @@ fieldset {
 
 legend {
   font-size: 22px;
-  text-align: center;
   padding-top: 20px;
 }
 

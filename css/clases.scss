@@ -77,8 +77,6 @@ main {
     background-size: cover;
 
     .tittle {
-        display: flex;
-        justify-content: center;
         padding-top: 70px;
         color: aliceblue;
         text-shadow: 0 0 10px black;
@@ -100,6 +98,7 @@ main {
     filter: brightness(0.5);
     box-shadow: 0px 0px 20px black;
     margin-top: 30px;
+    text-shadow: 0 0 10px black;
 }
 .musculacion {
     background-image: url(./../img/musculacion.jpg);
@@ -140,6 +139,23 @@ main {
 .yoga:hover{
     filter: none;
     transition: 1s;
+}
+.spinning{
+    background-color: black;
+    height: 70px;
+    h4{
+        margin: 0;
+        color: aliceblue;
+        text-transform: uppercase;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-top: 20px;
+    }
+    p{
+        color: aliceblue;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
 }
 
 footer {
