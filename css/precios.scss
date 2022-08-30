@@ -133,9 +133,10 @@ tr li{
     display: flex;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.617);
+    padding-bottom: 20px;
 }
 footer {
-    background-image: url(./../img/fondoDeBarra.jpeg);
+    background-image: linear-gradient(rgba(0,0,0),rgba(255,255,255,0)),url(./../img/fondoDeBarra.jpeg);
     width: 100%;
     height: 90px;
     .autor {
@@ -190,6 +191,21 @@ footer {
     }
     tr li{
         border-radius: 7px;
+    }
+    footer {
+        height: 105px;
+        .autor {
+            padding-top: 8px;
+            padding-bottom: 2px;
+            font-size: 18px;
+        }
+        .derechos {
+            font-size: 18px;
+        }
+        .redes {
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
     }
 }
 @media (max-width: 800px) {
@@ -275,15 +291,15 @@ footer {
 }
 @media (max-width: 600px) {
     footer {
-        height: 75px;
+        height: 125px;
         .autor {
-            font-size: 12px;
+            font-size: 18px;
         }
         .derechos {
-            font-size: 12px;
+            font-size: 18px;
         }
         .redes a {
-            font-size: 20px;
+            font-size: 22px;
             margin-bottom: 0;
         }
     }
@@ -304,17 +320,18 @@ footer {
         border-radius: 3px;
     }
     footer {
-        height: 90px;
+        height: 125px;
         .autor {
             padding-top: 2px;
-            font-size: 16px;
+            font-size: 18px;
             padding-bottom: 3px;
         }
         .derechos {
-            font-size: 16px;
+            font-size: 18px;
+            padding: 0px 10px;
         }
         .redes {
-            font-size: 20px;
+            font-size: 22px;
         }
     }
 }
@@ -327,6 +344,6 @@ footer {
         border-radius: 3px;
     }
     td{
-        padding: 10px 0;
+        padding: 2.5px;
     }
 }

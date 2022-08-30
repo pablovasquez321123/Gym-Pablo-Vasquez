@@ -115,7 +115,7 @@ main {
   background-color: rgba(0, 0, 0, 0.412);
 }
 
-.invitacion {
+p.invitacion {
   width: 430px;
   color: aliceblue;
   font-size: 20px;
@@ -185,15 +185,15 @@ footer .redes a:hover {
     width: 410px;
   }
   footer {
-    height: 89px;
+    height: 105px;
   }
   footer .autor {
     padding-top: 8px;
     padding-bottom: 2px;
-    font-size: 13px;
+    font-size: 18px;
   }
   footer .derechos {
-    font-size: 15px;
+    font-size: 18px;
   }
   footer .redes {
     font-size: 25px;
@@ -282,10 +282,9 @@ footer .redes a:hover {
     height: 70px;
   }
   p.invitacion {
-    font-size: 15px;
-    height: 80px;
+    font-size: 18px;
+    height: 130px;
     width: 450px;
-    padding-bottom: 85px;
   }
 }
 @media (max-width: 661px) {
@@ -295,16 +294,16 @@ footer .redes a:hover {
 }
 @media (max-width: 600px) {
   footer {
-    height: 75px;
+    height: 125px;
   }
   footer .autor {
-    font-size: 12px;
+    font-size: 18px;
   }
   footer .derechos {
-    font-size: 12px;
+    font-size: 18px;
   }
   footer .redes a {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 0;
   }
 }
@@ -312,27 +311,33 @@ footer .redes a:hover {
   .img .imagen-de-img {
     width: 400px;
   }
-  .invitacion {
-    width: 400px;
-  }
 }
 @media (max-width: 425px) {
   p.invitacion {
     width: 380px;
-    padding-bottom: 100px;
   }
   footer {
-    height: 75;
+    height: 145px;
   }
   footer .autor {
     padding-top: 2px;
-    font-size: 11px;
+    font-size: 18px;
     padding-bottom: 3px;
   }
   footer .derechos {
-    font-size: 10px;
+    font-size: 18px;
+    padding: 0px 10px;
   }
   footer .redes {
-    font-size: 20px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 375px) {
+  .img .imagen-de-img {
+    width: 340px;
+  }
+  p.invitacion {
+    width: 370px;
+    height: 160px;
   }
 }/*# sourceMappingURL=index.css.map */

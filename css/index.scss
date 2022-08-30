@@ -3,7 +3,6 @@
     margin: 0%;
     box-sizing: border-box;
 }
-
 .header {
     height: 80px;
     width: 100%;
@@ -42,7 +41,6 @@
     }
     
 }
-
 .checkbtn {
     font-size: 30px;
     color: #fff;
@@ -52,11 +50,9 @@
     cursor: pointer;
     display: none;
 }
-
 #bars {
     display: none;
 }
-
 main {
     background-image: url(./../img/fondoDePag.jpeg);
     background-size: cover;
@@ -64,7 +60,6 @@ main {
     width: 100%;
     padding-top: 20px;
 }
-
 .form-inline {
     margin-bottom: 15px;
 }
@@ -86,27 +81,22 @@ main {
         text-shadow: 0 0 10px black;
     }
 }
-
 .img {
     display: flex;
     justify-content: center;
-
     img {
         margin-top: 50px;
         border-radius: 5px;
     }
-
     .imagen-de-img {
         width: 800px;
     }
-
     .imagen-de-img:hover {
         transform: scale(1.01);
         transition: all 0.8s;
         box-shadow: 2px 2px 5px black;
     }
 }
-
 .subtitle {
     font-size: 26px;
     padding-top: 8px;
@@ -123,7 +113,7 @@ main {
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.412);
 }
-.invitacion {
+p.invitacion {
     @include txt_invitacion;
     margin: 0;
     padding: 5px;
@@ -159,7 +149,6 @@ footer {
         transition: 1.1s;
     }
 }
-
 @media (max-width: 1024px) {
     .header{
         ul {
@@ -173,50 +162,41 @@ footer {
             margin: 5px;
         }
     }
-
     h1 {
         font-size: 28px;
         background-color: rgba(0, 0, 0, 0.38);
     }
-
     .img {
         .imagen-de-img {
             width: 600px;
         }
     }
-
     .subtitle {
         font-size: 20px;
         padding-right: 10px;
         height: 70px;
     }
-
     p.invitacion {
         font-size: 18px;
         height: 130px;
         width: 410px;
     }
-
     footer {
-        height: 89px;
-
+        height: 105px;
         .autor {
             padding-top: 8px;
             padding-bottom: 2px;
-            font-size: 13px;
+            font-size: 18px;
         }
-
         .derechos {
-            font-size: 15px;
+            font-size: 18px;
         }
-
         .redes {
             font-size: 25px;
             letter-spacing: 10px;
         }
     }
 }
-
 @media (max-width: 800px) {
     .header {
         height: 60px;
@@ -232,29 +212,24 @@ footer {
             margin: 5px;
         }
     }
-
     main {
         padding-top: 50px;
     }
-
     h1 {
         font-size: 24px;
         background-color: rgba(0, 0, 0, 0.38);
     }
-
     .subtitle {
         font-size: 20px;
         padding-right: 10px;
         height: 70px;
     }
-
     p.invitacion {
         font-size: 18px;
         height: 130px;
         width: 410px;
     }
 }
-
 @media (max-width: 767px) {
     .header{
         ul {
@@ -286,94 +261,88 @@ footer {
         display: block;
         line-height: 65px;
     }
-
     #bars:checked~ul {
         left: 0;
     }
-
     main {
         padding-top: 40px;
         height: auto;
     }
-
     h1 {
         font-size: 22px;
         padding-bottom: 0px;
         background-color: rgba(0, 0, 0, 0.38);
     }
-
     .subtitle {
         margin-top: 50px;
         font-size: 20px;
         width: 300px;
         padding-right: 0px;
         height: 70px;
-
     }
-
     p.invitacion {
-        font-size: 15px;
-        height: 80px;
+        font-size: 18px;
+        height: 130px;
         width: 450px;
-        padding-bottom: 85px;
     }
-
 }
-
 @media (max-width: 661px) {
     .img {
         .imagen-de-img {
             width: 500px;
         }
     }
-
 }
 @media (max-width: 600px) {
     footer {
-        height: 75px;
+        height: 125px;
         .autor {
-            font-size: 12px;
+            font-size: 18px;
         }
         .derechos {
-            font-size: 12px;
+            font-size: 18px;
         }
         .redes a {
-            font-size: 20px;
+            font-size: 22px;
             margin-bottom: 0;
         }
     }
 }
-
 @media (max-width: 510px) {
     .img {
         .imagen-de-img {
             width: 400px;
         }
     }
-
-    .invitacion {
-        width: 400px;
-    }
 }
-
 @media (max-width: 425px) {
     p.invitacion {
         width: 380px;
-        padding-bottom: 100px;
     }
-
     footer {
-        height: 75;
+        height: 145px;
         .autor {
             padding-top: 2px;
-            font-size: 11px;
+            font-size: 18px;
             padding-bottom: 3px;
         }
         .derechos {
-            font-size: 10px;
+            font-size: 18px;
+            padding: 0px 10px;
         }
         .redes {
-            font-size: 20px;
+            font-size: 22px;
         }
+    }
+}
+@media (max-width:375px) {
+    .img {
+        .imagen-de-img {
+            width: 340px;
+        }
+    }
+    p.invitacion{
+        width: 370px;
+        height: 160px;
     }
 }

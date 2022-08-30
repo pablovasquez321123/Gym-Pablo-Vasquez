@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 .header {
     height: 80px;
     width: 100%;
@@ -48,7 +47,6 @@
     }
 
 }
-
 .checkbtn {
     font-size: 30px;
     color: #fff;
@@ -58,11 +56,9 @@
     cursor: pointer;
     display: none;
 }
-
 #bars {
     display: none;
 }
-
 main {
     background-image: url(./../img/fondoDePag.jpeg);
     background-size: cover;
@@ -142,13 +138,13 @@ main {
 }
 .spinning{
     background-color: black;
-    height: 70px;
+    height: 100px;
     h4{
         margin: 0;
         color: aliceblue;
         text-transform: uppercase;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        padding-top: 20px;
+        padding-top: 30px;
     }
     p{
         color: aliceblue;
@@ -157,44 +153,37 @@ main {
         padding-bottom: 10px;
     }
 }
-
 footer {
     background-image: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0)), url(./../img/fondoDeBarra.jpeg);
     width: 100%;
     height: 90px;
-
     .autor {
         font-family: 'DM Sans', sans-serif;
         padding-top: 5px;
         padding-left: 20px;
         color: aliceblue;
     }
-
     .derechos {
         font-family: 'DM Sans', sans-serif;
         text-align: center;
         color: aliceblue;
     }
-
     .redes {
         font-size: 25px;
         color: aliceblue;
         display: flex;
         justify-content: center;
     }
-
     .redes a {
         color: aliceblue;
         margin: 0 10px;
     }
-
     .redes a:hover {
         color: rgba(148, 141, 141, 0.589);
         transform: translateY(-10px);
         transition: 1.1s;
     }
 }
-
 @media (max-width: 1024px) {
     .header {
         ul {
@@ -211,37 +200,30 @@ footer {
         }
     }
 }
-
 @media (max-width: 800px) {
     .header {
         height: 60px;
-
         img {
             height: 60px;
             width: 150px;
         }
-
         ul li {
             line-height: 60px;
         }
-
         ul li a {
             font-size: 18px;
             margin: 5px;
         }
     }
 }
-
 @media (max-width: 767px) {
     .checkbtn {
         display: block;
         line-height: 65px;
     }
-
     #bars:checked~ul {
         left: 0;
     }
-
     .header {
         ul {
             position: fixed;
@@ -254,60 +236,50 @@ footer {
             text-align: center;
             transition: all 0.5s;
         }
-
         ul li {
             display: block;
             margin: 40px 0;
             line-height: 30px;
         }
-
         ul li a {
             font-size: 20px;
             margin: 0px;
         }
-
         ul li a:hover {
             transition: 0.5s;
             background-color: rgba(81, 79, 79, 0.724);
         }
     }
 }
-
 @media (max-width: 600px) {
     footer {
-        height: 75px;
-
+        height: 125px;
         .autor {
-            font-size: 12px;
+            font-size: 18px;
         }
-
         .derechos {
-            font-size: 12px;
+            font-size: 18px;
         }
-
         .redes a {
-            font-size: 20px;
+            font-size: 22px;
             margin-bottom: 0;
         }
     }
 }
-
 @media (max-width: 425px) {
     footer {
-        height: 75;
-
+        height: 145px;
         .autor {
             padding-top: 2px;
-            font-size: 11px;
+            font-size: 18px;
             padding-bottom: 3px;
         }
-
         .derechos {
-            font-size: 10px;
+            font-size: 18px;
+            padding: 0px 10px;
         }
-
         .redes {
-            font-size: 20px;
+            font-size: 22px;
         }
     }
 }

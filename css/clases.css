@@ -186,14 +186,14 @@ main {
 
 .spinning {
   background-color: black;
-  height: 70px;
+  height: 100px;
 }
 .spinning h4 {
   margin: 0;
   color: aliceblue;
   text-transform: uppercase;
   font-family: Georgia, "Times New Roman", Times, serif;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .spinning p {
   color: aliceblue;
@@ -297,32 +297,33 @@ footer .redes a:hover {
 }
 @media (max-width: 600px) {
   footer {
-    height: 75px;
+    height: 125px;
   }
   footer .autor {
-    font-size: 12px;
+    font-size: 18px;
   }
   footer .derechos {
-    font-size: 12px;
+    font-size: 18px;
   }
   footer .redes a {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 0;
   }
 }
 @media (max-width: 425px) {
   footer {
-    height: 75;
+    height: 145px;
   }
   footer .autor {
     padding-top: 2px;
-    font-size: 11px;
+    font-size: 18px;
     padding-bottom: 3px;
   }
   footer .derechos {
-    font-size: 10px;
+    font-size: 18px;
+    padding: 0px 10px;
   }
   footer .redes {
-    font-size: 20px;
+    font-size: 22px;
   }
 }/*# sourceMappingURL=clases.css.map */

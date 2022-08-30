@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 .header {
     height: 80px;
     width: 100%;
@@ -54,7 +53,6 @@
 #bars {
     display: none;
 }
-
 main {
     background-image: url(./../img/fondoDePag.jpeg);
     background-size: cover;
@@ -63,7 +61,6 @@ main {
     width: 100%;
     padding-top: 80px;
 }
-
 .h1 {
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -72,24 +69,20 @@ main {
     font-size: 23px;
     background-color: rgba(0, 0, 0, 0.38);
 }
-
 .bibliografia {
     color: rgba(240, 248, 255, 0.596);
-    padding: 20px;
+    padding: 0px 50px;
     font-size: 22px;
     background-color: rgba(0, 0, 0, 0.38);
     margin-bottom: 80px;
 }
-
 .caja-gym {
     background-color: rgba(0, 0, 0, 0.755);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin-bottom: 110px;
 }
-
 .gym h4 {
-    text-align: center;
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: black;
@@ -99,22 +92,19 @@ main {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-
 .row img:hover {
     transform: scale(1.1);
     transition: 1.6s;
     border-radius: 10px;
 }
-
 .gym p {
     color: aliceblue;
-    padding: 5%;
+    padding: 3%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: 0 0 1px black;
 }
-
 footer {
-    background-image: url(./../img/fondoDeBarra.jpeg);
+    background-image: linear-gradient(rgba(0,0,0),rgba(255,255,255,0)),url(./../img/fondoDeBarra.jpeg);
     width: 100%;
     height: 90px;
     .autor {
@@ -157,8 +147,22 @@ footer {
             margin: 5px;
         }
     }
+    footer {
+        height: 105px;
+        .autor {
+            padding-top: 8px;
+            padding-bottom: 2px;
+            font-size: 18px;
+        }
+        .derechos {
+            font-size: 18px;
+        }
+        .redes {
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+    }
 }
-
 @media (max-width: 800px) {
     .header {
         height: 60px;
@@ -175,7 +179,6 @@ footer {
         }
     }
 }
-
 @media (max-width: 767px) {
     .header{
         ul {
@@ -219,36 +222,35 @@ footer {
         background-size: cover;
     }
 }
-
 @media (max-width: 600px) {
     footer {
-        height: 75px;
+        height: 125px;
         .autor {
-            font-size: 12px;
+            font-size: 18px;
         }
         .derechos {
-            font-size: 12px;
+            font-size: 18px;
         }
         .redes a {
-            font-size: 20px;
+            font-size: 22px;
             margin-bottom: 0;
         }
     }
 }
-
 @media (max-width: 425px) {
     footer {
-        height: 75;
+        height: 145px;
         .autor {
             padding-top: 2px;
-            font-size: 11px;
+            font-size: 18px;
             padding-bottom: 3px;
         }
         .derechos {
-            font-size: 10px;
+            font-size: 18px;
+            padding: 0px 10px;
         }
         .redes {
-            font-size: 20px;
+            font-size: 22px;
         }
     }
 }
