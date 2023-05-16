@@ -13,6 +13,7 @@
   float: left;
   width: 200px;
   height: 80px;
+  cursor: pointer;
 }
 .header .barra {
   display: flex;
@@ -20,7 +21,6 @@
 }
 .header ul {
   list-style: none;
-  float: right;
 }
 .header ul li {
   display: inline-block;
@@ -45,7 +45,6 @@
 .checkbtn {
   font-size: 30px;
   color: #fff;
-  float: right;
   line-height: 80px;
   margin-right: 20px;
   cursor: pointer;

@@ -12,6 +12,7 @@
         float: left;
         width: 200px;
         height: 80px;
+        cursor: pointer;
     }
 
     .barra {
@@ -21,7 +22,6 @@
 
     ul {
         list-style: none;
-        float: right;
     }
 
     ul li {
@@ -50,7 +50,6 @@
 .checkbtn {
     font-size: 30px;
     color: #fff;
-    float: right;
     line-height: 80px;
     margin-right: 20px;
     cursor: pointer;
